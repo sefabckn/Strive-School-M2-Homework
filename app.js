@@ -13,4 +13,18 @@ for (i = 0; i < genres.length; i++) {
 
 window.onload = function() {
 
-}
+    }
+    /* Console Output:
+    <li></li>
+    "Comedy"
+    <li></li>
+    "Drama"
+    <li></li>
+    "Romance"
+    <li></li>
+    "Horror"
+    <li></li>
+    "Sci"
+    <li></li>
+    "Documentary"
+    */
