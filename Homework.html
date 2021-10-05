@@ -38,7 +38,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
 
     <style>
-    /* EXERCISE 1
+        /* EXERCISE 1
             For every Album displayed in the page we'd like to have a consistent appearence.
             Create the template of an Album component (you can start from a bootstrap one or create your own)
             You will use it to display every album in the page.
@@ -55,7 +55,11 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             create CSS rules to style them if needed
             ...to make sure every Album component looks the same.
          */
-    }
+        
+        .container {
+            color: white;
+            padding-top: 2em;
+        }
     </style>
 </head>
 
@@ -98,7 +102,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <!--Exercise 1-->
     <div class="row mb-5 bg-dark">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0">
-            <div class="card shadow border-0">
+            <div class="card shadow border-0 bg-dark">
                 <div class="card text-center" style="width: 18rem;">
                     <img src="https://lastfm.freetls.fastly.net/i/u/300x300/16ce2b8202c0f1059905c44965b0d159.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -110,7 +114,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0">
-            <div class="card shadow border-0">
+            <div class="card shadow border-0 bg-dark">
                 <div class="card text-center" style="width: 18rem;">
                     <img src="https://jazz.pl/wp-content/uploads/2015/09/81OmhDl9LML._SL1500_.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -122,7 +126,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0">
-            <div class="card shadow border-0">
+            <div class="card shadow border-0 bg-dark">
                 <div class="card text-center" style="width: 18rem;">
                     <img src="https://i.pinimg.com/originals/a3/8d/d0/a38dd0edfb94c052ef0116e238d9829a.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -134,7 +138,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0">
-            <div class="card shadow border-0">
+            <div class="card shadow border-0 bg-dark">
                 <div class="card text-center" style="width: 18rem;">
                     <img src="https://upload.wikimedia.org/wikipedia/en/c/c0/Into_the_Wild_album_cover.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -146,7 +150,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div><br><br><br>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0">
-            <div class="card shadow border-0">
+            <div class="card shadow border-0 bg-dark">
                 <div class="card text-center" style="width: 18rem;">
                     <img src="https://i.scdn.co/image/ab6761610000e5eba8be16a95c2cc4950cbaa8d8" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -158,7 +162,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0">
-            <div class="card shadow border-0">
+            <div class="card shadow border-0 bg-dark">
                 <div class="card text-center" style="width: 18rem;">
                     <img src="https://terazrock.com/public/upload/catalog/product/264/minigallery/thumb_page_1625483040001_PF.jpg" class="card-img-top " alt="... ">
                     <div class="card-body ">
@@ -170,7 +174,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0 ">
-            <div class="card shadow border-0 ">
+            <div class="card shadow border-0 bg-dark ">
                 <div class="card text-center " style="width: 18rem; ">
                     <img src="https://www.stereolife.pl/images/plyty/SlayerReignInBlood.jpg" class="card-img-top " alt="... ">
                     <div class="card-body ">
@@ -182,7 +186,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0 ">
-            <div class="card shadow border-0 ">
+            <div class="card shadow border-0 bg-dark ">
                 <div class="card text-center " style="width: 18rem; ">
                     <img src="https://image.ceneostatic.pl/data/products/2726659/i-judas-priest-painkiller-cd.jpg" class="card-img-top " alt="... ">
                     <div class="card-body ">
@@ -196,7 +200,6 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 
     </div>
 
-
     <!-- EXERCISE 3
             Create a responsive section for your favourite albums.
             In this section you should have:
@@ -204,11 +207,25 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
+    <div class="container bg-dark mb-5">
+        <h1 class="display-3 text-center ">MY FAVOURITE ALBUMS</h1><br><br>
+        <div class="row mb-5 bg-dark">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0">
+                <div class="card shadow border-0">
+                    <div class="card text-center" style="width: 18rem;">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/16ce2b8202c0f1059905c44965b0d159.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title">Slipknot</p>
+                            <p class="card-text">Nu Metal</p>
+                            <a href="#" class="btn btn-primary bg-dark">Go to Album</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-
-
-    <!-- EXERCISE 4
+        <!-- EXERCISE 4
             Create a section for the album reviews.
             Pick one of your favourite albums, and create a section with:
             - Cover Image
@@ -220,45 +237,45 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - ... And whatever you think it's interesting about it!
         -->
 
-    <!-- EXERCISE 5
+        <!-- EXERCISE 5
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame " chart! 
         -->
 
-    <!-- EXERCISE 6
+        <!-- EXERCISE 6
             Do you have any musician / band you admire or you are a fan of?
             This section is dedicated to him / her / them!
             Feel free to experiment in this part of the page.
         -->
 
-    <!-- EXERCISE 7
+        <!-- EXERCISE 7
             Just covers!
             Create a tapestry of album pictures. Every album picture must be "squared " (use CSS to achieve that).
             Put at least 20 covers (also repeated) to have a nice tapestry effect and see how Bootstrap handles it.
         -->
 
-    <!-- EXERCISE 8
+        <!-- EXERCISE 8
             Implement a footer with some information / social links.
         -->
 
-    <!-- ############ EXTRA:
+        <!-- ############ EXTRA:
         EXERCISE 9
             Create an album details area which will be toggled on and off by clicking on the album image.
         -->
 
-    <!-- EXERCISE 10
+        <!-- EXERCISE 10
             Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible).
             (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
         -->
 
-    <!--
+        <!--
          EXERCISE 11
             Add in the footer the number of how many ALBUMS are present on the page. 
             Create the JavaScript logic that runs when the page finished loading and 
             counts the albums and applies the number in the area of the footer you've previously decided.
         -->
 
-    <script src="/app.js "></script>
+        <script src="/app.js "></script>
 </body>
 
 </html>
