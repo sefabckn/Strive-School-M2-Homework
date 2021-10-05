@@ -34,7 +34,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <source src="app.js" type="text/js">
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
 
     <style>
@@ -55,6 +55,10 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             create CSS rules to style them if needed
             ...to make sure every Album component looks the same.
          */
+        
+        .navbar-nav {
+            @media screen {}
+        }
     </style>
 </head>
 
@@ -78,15 +82,15 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                 <li class="nav-item active">
                     <a class="nav-link" href="#">My Profile <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Favourites</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Favourites</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Pricing</a>
                 </li>
                 <li class="nav-item"></li>
-                <nav class="navbar navbar-light bg-light">
-                    <form class="form-inline">
+                <nav class="navbar navbar-dark bg-dark">
+                    <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </form>
@@ -94,6 +98,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             </ul>
         </div>
     </nav>
+    <!--Exercise 1-->
     <div class="row mb-5 bg-dark">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-md-0">
             <div class="card shadow border-0">
@@ -202,6 +207,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
+
+
+
 
     <!-- EXERCISE 4
             Create a section for the album reviews.
